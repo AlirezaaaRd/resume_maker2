@@ -1,0 +1,32 @@
+<!-- templates/registration/signup.html -->
+
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+<h2>Sign up</h2>
+<form method="post">
+ -{% csrf_token %}
+  {{ form.username.lable }}
+  {{ form.username }}
+  {{ form.username.help_text }}
+
+
+
+  {{ form.password1.lable }}
+  {{ form.password1 }}
+  {{ form.password1.help_text }}
+
+
+  {{ form.password2.lable }}
+  {{ form.password2 }}
+  {{ form.password2.help_text }}
+
+
+  <button type="submit">Sign Up</button>
+</form>
+{% endblock content %}
+

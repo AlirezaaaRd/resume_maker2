@@ -1352,6 +1352,10 @@ ol {
     html[dir="rtl"] .cv-time-period {
       text-align: left; } }
 
+a {
+  color: blue;
+}
+
 /**
 * Tabs
 */

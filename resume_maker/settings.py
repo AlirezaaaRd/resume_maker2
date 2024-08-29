@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*24t^3r07$(zo=s=budd*fpyygeyih56^%kj=9g#12c*=%=)t=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['alirezaaard.pythonanywhere.com']
+ALLOWED_HOSTS = ['alirezaaard.pythonanywhere.com' , '127.0.0.1']
 
 
 # Application definition
@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'widget_tweaks',
     'app_resume',
+    'app_account',
 ]
 
 MIDDLEWARE = [
@@ -70,6 +72,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'resume_maker.wsgi.application'
 
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
